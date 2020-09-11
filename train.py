@@ -9,7 +9,7 @@ import math
 
 ## Network Arguments
 args = {}
-args['use_cuda'] = False
+args['use_cuda'] = True
 args['encoder_size'] = 64
 args['decoder_size'] = 128
 args['in_length'] = 16
@@ -184,6 +184,3 @@ for epoch_num in range(pretrainEpochs+trainEpochs):
     #__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 torch.save(net.state_dict(), 'trained_models/cslstm_m.tar')
-
-
-

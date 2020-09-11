@@ -9,7 +9,7 @@ import math
 
 ## Network Arguments
 args = {}
-args['use_cuda'] = True
+args['use_cuda'] = False
 args['encoder_size'] = 64
 args['decoder_size'] = 128
 args['in_length'] = 16
@@ -41,8 +41,8 @@ crossEnt = torch.nn.BCELoss()
 
 
 ## Initialize data loaders
-trSet = ngsimDataset('data/TrainSet.mat')
-valSet = ngsimDataset('data/ValSet.mat')
+trSet = ngsimDataset('../../Data/TrainSet.mat')
+valSet = ngsimDataset('../../Data/ValSet.mat')
 trDataloader = DataLoader(trSet,batch_size=batch_size,shuffle=True,num_workers=8,collate_fn=trSet.collate_fn)
 valDataloader = DataLoader(valSet,batch_size=batch_size,shuffle=True,num_workers=8,collate_fn=valSet.collate_fn)
 

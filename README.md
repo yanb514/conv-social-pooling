@@ -1,6 +1,5 @@
 # Convolutional Social Pooling
-
-# forked from https://github.com/nachiket92/conv-social-pooling
+forked from https://github.com/nachiket92/conv-social-pooling
 # TODO:
 1. Run with GPU, replicate results
 2. Train with HighD data sets

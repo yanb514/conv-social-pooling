@@ -6,6 +6,9 @@ from torch.utils.data import DataLoader
 import time
 import math
 
+# to ignore warnings
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning)
 
 ## Network Arguments
 args = {}

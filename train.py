@@ -8,7 +8,7 @@ import math
 
 # to ignore warnings
 import warnings
-warnings.filterwarnings("ignore", category=UserWarning)
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 ## Network Arguments
 args = {}
